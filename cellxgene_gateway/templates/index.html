@@ -53,18 +53,7 @@
 		<li>
 			Confirm that your ssh key has been properly added. Running the following command should connect you to the server:
 		</li>
-		<pre>ssh ec2-user@{{ ip }}</pre>	
-		<li>
-			Prepare your data on your own machine. They should be in a common folder called 'USER' and should look <br>similar to the following structure:  
-		</li>
-		<pre>- USER
-    - hpc.h5ad
-    - pbmc3k.h5ad</pre>	
-		<li>Copy your data to the server (replace USER with your username):</li>
-		<pre>ssh ec2-user@{{ ip }} 'mkdir -p {{ cellxgene_data }}/USER/'
-ssh ec2-user@{{ ip }} 'mkdir -p {{ cellxgene_data }}/USER/DATA/'
-scp -r pbmc3k.h5ad ec2-user@{{ ip }}:{{ cellxgene_data }}/USER/DATA/</pre>	
-		<li>Take a look at your data using the file crawler link above</li>
+
 	</ol>	
 
 </body>
